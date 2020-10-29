@@ -2,7 +2,7 @@ package model
 
 import "github.com/jinzhu/gorm"
 
-// Product logs
+// Fixlogs logs
 type Fixlogs struct {
 	gorm.Model
 	Title       string `gorm:"not null" json:"title"`
@@ -10,7 +10,6 @@ type Fixlogs struct {
 	Names       string `json:"names"`
 	Institute   string `json:"institute"`
 	Department  string `json:"department"`
-	User []User
-	Fixdetail  string `json:"Fixdetail"`
+	Agent       string `json:"agent"`
+	Fixdetail   string `json:"fixdetail"`
 }
-
