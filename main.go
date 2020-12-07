@@ -17,7 +17,7 @@ func main() {
 	database.ConnectDB()
 
 	router.SetupRoutes(app)
-	log.Fatal(app.Listen(":3000"))
+	log.Fatal(app.Listen(":3030"))
 
 	defer database.DB.Close()
 }

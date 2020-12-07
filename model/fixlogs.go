@@ -12,4 +12,5 @@ type Fixlogs struct {
 	Department  string `json:"department"`
 	Agent       string `json:"agent"`
 	Fixdetail   string `json:"fixdetail"`
+	Fixstatus   string `json:"fixstatus"`
 }
